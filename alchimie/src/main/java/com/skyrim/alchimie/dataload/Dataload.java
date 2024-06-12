@@ -256,6 +256,36 @@ public class Dataload implements CommandLineRunner {
             Ingredient ingredient10 = new Ingredient(0, "bec de faucon", effectRepository.findByName("restauration de vigueur"), effectRepository.findByName("resistance a la glace"), effectRepository.findByName("renfort de portage"), effectRepository.findByName("resistance a la foudre"), extensionRepository.findByName("skyrim"), true);
             newListIngredients.add(ingredient10);
 
+            Ingredient ingredient11 = new Ingredient(0, "bernache nordique", effectRepository.findByName("penalite de magie"), effectRepository.findByName("respiration aquatique"), effectRepository.findByName("regeneration de sante"), effectRepository.findByName("renfort de vol a la tire"), extensionRepository.findByName("skyrim"), true);
+            newListIngredients.add(ingredient11);
+
+            Ingredient ingredient12 = new Ingredient(0, "ble", effectRepository.findByName("restauration de sante"), effectRepository.findByName("renfort de sante"), effectRepository.findByName("penalite de recuperation de vigueur"), effectRepository.findByName("penalite de magie persistante"), extensionRepository.findByName("skyrim"), true);
+            newListIngredients.add(ingredient12);
+
+            Ingredient ingredient13 = new Ingredient(0, "carpe du hist", effectRepository.findByName("renfort de magie"), effectRepository.findByName("penalite de recuperation de vigueur"), effectRepository.findByName("respiration aquatique"), effectRepository.findByName("resistance a la foudre"), extensionRepository.findByName("skyrim"), true);
+            newListIngredients.add(ingredient13);
+
+            Ingredient ingredient14 = new Ingredient(0, "chair humaine", effectRepository.findByName("penalite de sante"), effectRepository.findByName("paralysie"), effectRepository.findByName("restauration de magie"), effectRepository.findByName("renfort de furtivite"), extensionRepository.findByName("skyrim"), true);
+            newListIngredients.add(ingredient14);
+            
+            Ingredient ingredient15 = new Ingredient(0, "champignon luisant", effectRepository.findByName("resistance a la foudre"), effectRepository.findByName("renfort de destruction"), effectRepository.findByName("renfort de forgeage"), effectRepository.findByName("renfort de sante"), extensionRepository.findByName("skyrim"), true);
+            newListIngredients.add(ingredient15);
+
+            Ingredient ingredient16 = new Ingredient(0, "chapeau-blanc", effectRepository.findByName("vulnerabilite a la glace"), effectRepository.findByName("renfort d'armure lourde"), effectRepository.findByName("restauration de magie"), effectRepository.findByName("destruction de magie"), extensionRepository.findByName("skyrim"), true);
+            newListIngredients.add(ingredient16);
+
+            Ingredient ingredient17 = new Ingredient(0, "chitine de vasard", effectRepository.findByName("restauration de vigueur"), effectRepository.findByName("potion medicinale"), effectRepository.findByName("resistance au poison"), effectRepository.findByName("resistance au feu"), extensionRepository.findByName("skyrim"), true);
+            newListIngredients.add(ingredient17);
+
+            Ingredient ingredient18 = new Ingredient(0, "cloquerille", effectRepository.findByName("penalite de vigueur"), effectRepository.findByName("frenesie"), effectRepository.findByName("restauration de sante"), effectRepository.findByName("renfort de forgeage"), extensionRepository.findByName("skyrim"), true);
+            newListIngredients.add(ingredient18);
+
+            Ingredient ingredient19 = new Ingredient(0, "coeur de daedra", effectRepository.findByName("restauration de sante"), effectRepository.findByName("penalite de recuperation de vigueur"), effectRepository.findByName("penalite de magie"), effectRepository.findByName("peur"), extensionRepository.findByName("skyrim"), true);
+            newListIngredients.add(ingredient19);
+
+            Ingredient ingredient20 = new Ingredient(0, "coeur de ronce", effectRepository.findByName("restauration de magie"), effectRepository.findByName("renfort de parade"), effectRepository.findByName("paralysie"), effectRepository.findByName("renfort de magie"), extensionRepository.findByName("skyrim"), true);
+            newListIngredients.add(ingredient20);
+
             ingredientRepository.saveAll(newListIngredients);
 
         }
